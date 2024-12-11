@@ -266,6 +266,7 @@ typedef struct Image {
     int height;             // Image base height
     int mipmaps;            // Mipmap levels, 1 by default
     int format;             // Data format (PixelFormat type)
+    const char* path;      // Image path (if loaded from file)
 } Image;
 
 // Texture, tex data stored in GPU memory (VRAM)
@@ -275,6 +276,7 @@ typedef struct Texture {
     int height;             // Texture base height
     int mipmaps;            // Mipmap levels, 1 by default
     int format;             // Data format (PixelFormat type)
+    const char* path;       // Image path (if loaded from file)
 } Texture;
 
 // Texture2D, same as Texture

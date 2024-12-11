@@ -4128,6 +4128,7 @@ Texture2D LoadTextureFromImage(Image image)
     texture.height = image.height;
     texture.mipmaps = image.mipmaps;
     texture.format = image.format;
+    texture.path = image.path;
 
     return texture;
 }
