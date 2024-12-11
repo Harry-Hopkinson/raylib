@@ -319,6 +319,7 @@ Image LoadImageRaw(const char *fileName, int width, int height, int format, int 
             image.height = height;
             image.mipmaps = 1;
             image.format = format;
+            image.path = fileName;
         }
 
         UnloadFileData(fileData);
